@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'psycopg2',
     'MascotasAPP'
 ]
 
@@ -78,10 +79,11 @@ WSGI_APPLICATION = 'Mascotas_Felices.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Mascotas_Felices',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'Rosales1511@',
-        'HOST': 'localhost',
+        'HOST': 'db',
+        #'PASSWORD': 'postgres',
         'PORT': '5432',
     }
 }

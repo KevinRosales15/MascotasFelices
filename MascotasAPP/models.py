@@ -25,7 +25,7 @@ class Mascota(models.Model):
     Especie = models.CharField(max_length=50)
     Fecha_nacimiento = models.DateField()
     Edad = models.IntegerField()
-    Sexo = models.CharField(max_length=10)
+    Sexo = models.CharField(max_length=10,choices=[('M', 'Macho'), ('H', 'Hembra')], default='M')
     Color = models.CharField(max_length=250)
     direccion = models.CharField(max_length=255)
     telefono = models.CharField(max_length=20)
